@@ -31,7 +31,7 @@ class SignUpVC: UIViewController {
 
         ProfileImage.layer.borderWidth = 1
         ProfileImage.layer.masksToBounds = false
-        ProfileImage.layer.borderColor = UIColor.red.cgColor
+        ProfileImage.layer.borderColor = UIColor.green.cgColor
         ProfileImage.layer.cornerRadius = ProfileImage.frame.height/2
         ProfileImage.clipsToBounds = true
     }

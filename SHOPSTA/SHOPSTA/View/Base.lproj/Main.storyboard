@@ -268,6 +268,9 @@
                                 <color key="tintColor" red="0.46666666670000001" green="0.82745098039999998" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Button" image="Clear"/>
+                                <connections>
+                                    <action selector="BackbBtn:" destination="ULc-ta-dyT" eventType="touchUpInside" id="78e-50-PXq"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ApplicationLogo" translatesAutoresizingMaskIntoConstraints="NO" id="FtQ-aR-WkG">
                                 <rect key="frame" x="112" y="53" width="150" height="150"/>
@@ -433,6 +436,9 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="SignUpFirebase:" destination="ULc-ta-dyT" eventType="touchUpInside" id="wez-44-zd9"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -484,6 +490,7 @@
                         <viewLayoutGuide key="safeArea" id="Lqo-rg-Fqp"/>
                     </view>
                     <connections>
+                        <outlet property="ProfileImage" destination="PBI-6q-uTy" id="dsg-Zs-TZT"/>
                         <outlet property="UserEmail" destination="Bkx-9D-Epr" id="Neg-FK-0PL"/>
                         <outlet property="UserName" destination="egm-CT-gdP" id="e7t-a9-9Lo"/>
                         <outlet property="UserPassword" destination="gVq-Wh-tpb" id="GbS-ZR-wDt"/>
