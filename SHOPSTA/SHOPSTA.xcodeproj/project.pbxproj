@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		843D604B1FD2D629009BF6E3 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D60481FD2D628009BF6E3 /* UIButton.swift */; };
+		843D604C1FD2D629009BF6E3 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D60491FD2D629009BF6E3 /* ShadowView.swift */; };
+		843D604D1FD2D629009BF6E3 /* UnderlinedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D604A1FD2D629009BF6E3 /* UnderlinedTextField.swift */; };
+		843D604F1FD2DCB4009BF6E3 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D604E1FD2DCB4009BF6E3 /* MainVC.swift */; };
 		84E36E691FD2B3BD001AE1AA /* Vollkorn_SC in Resources */ = {isa = PBXBuildFile; fileRef = 84E36E681FD2B3BD001AE1AA /* Vollkorn_SC */; };
+		B17FD072284F208954BAA902 /* Pods_SHOPSTA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DA30049BC502591B6203AF /* Pods_SHOPSTA.framework */; };
 		E3A4BC641FD2A324000C351C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A4BC631FD2A324000C351C /* AppDelegate.swift */; };
-		E3A4BC661FD2A324000C351C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A4BC651FD2A324000C351C /* ViewController.swift */; };
 		E3A4BC691FD2A324000C351C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A4BC671FD2A324000C351C /* Main.storyboard */; };
 		E3A4BC6B1FD2A324000C351C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3A4BC6A1FD2A324000C351C /* Assets.xcassets */; };
 		E3A4BC6E1FD2A324000C351C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A4BC6C1FD2A324000C351C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46BC1A56871A1D79FD727DAC /* Pods-SHOPSTA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHOPSTA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SHOPSTA/Pods-SHOPSTA.debug.xcconfig"; sourceTree = "<group>"; };
+		843D60481FD2D628009BF6E3 /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		843D60491FD2D629009BF6E3 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		843D604A1FD2D629009BF6E3 /* UnderlinedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderlinedTextField.swift; sourceTree = "<group>"; };
+		843D604E1FD2DCB4009BF6E3 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		84E36E681FD2B3BD001AE1AA /* Vollkorn_SC */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Vollkorn_SC; sourceTree = SOURCE_ROOT; };
+		99DA30049BC502591B6203AF /* Pods_SHOPSTA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHOPSTA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C87E78122BEA7345E77D1784 /* Pods-SHOPSTA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHOPSTA.release.xcconfig"; path = "Pods/Target Support Files/Pods-SHOPSTA/Pods-SHOPSTA.release.xcconfig"; sourceTree = "<group>"; };
 		E3A4BC601FD2A324000C351C /* SHOPSTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHOPSTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A4BC631FD2A324000C351C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E3A4BC651FD2A324000C351C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E3A4BC681FD2A324000C351C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E3A4BC6A1FD2A324000C351C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3A4BC6D1FD2A324000C351C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,15 +41,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B17FD072284F208954BAA902 /* Pods_SHOPSTA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14331D28C6F60CE08966019F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46BC1A56871A1D79FD727DAC /* Pods-SHOPSTA.debug.xcconfig */,
+				C87E78122BEA7345E77D1784 /* Pods-SHOPSTA.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		539F84B707A881F7E1F1FE61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99DA30049BC502591B6203AF /* Pods_SHOPSTA.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84E36E6A1FD2CCE0001AE1AA /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				843D60491FD2D629009BF6E3 /* ShadowView.swift */,
+				843D60481FD2D628009BF6E3 /* UIButton.swift */,
+				843D604A1FD2D629009BF6E3 /* UnderlinedTextField.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -49,6 +80,8 @@
 			children = (
 				E3A4BC621FD2A324000C351C /* SHOPSTA */,
 				E3A4BC611FD2A324000C351C /* Products */,
+				14331D28C6F60CE08966019F /* Pods */,
+				539F84B707A881F7E1F1FE61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,7 +120,7 @@
 		E3A4BC761FD2A393000C351C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E3A4BC651FD2A324000C351C /* ViewController.swift */,
+				843D604E1FD2DCB4009BF6E3 /* MainVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -106,9 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3A4BC721FD2A324000C351C /* Build configuration list for PBXNativeTarget "SHOPSTA" */;
 			buildPhases = (
+				ED1AEBE3C1D19B59F012A73C /* [CP] Check Pods Manifest.lock */,
 				E3A4BC5C1FD2A323000C351C /* Sources */,
 				E3A4BC5D1FD2A323000C351C /* Frameworks */,
 				E3A4BC5E1FD2A323000C351C /* Resources */,
+				6166460DC22B11B49CCB9C7C /* [CP] Embed Pods Frameworks */,
+				B4315873998F3FF6624F5D65 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,13 +203,94 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6166460DC22B11B49CCB9C7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SHOPSTA/Pods-SHOPSTA-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SHOPSTA/Pods-SHOPSTA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4315873998F3FF6624F5D65 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SHOPSTA/Pods-SHOPSTA-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED1AEBE3C1D19B59F012A73C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SHOPSTA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E3A4BC5C1FD2A323000C351C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3A4BC661FD2A324000C351C /* ViewController.swift in Sources */,
+				843D604D1FD2D629009BF6E3 /* UnderlinedTextField.swift in Sources */,
+				843D604F1FD2DCB4009BF6E3 /* MainVC.swift in Sources */,
+				843D604C1FD2D629009BF6E3 /* ShadowView.swift in Sources */,
 				E3A4BC641FD2A324000C351C /* AppDelegate.swift in Sources */,
+				843D604B1FD2D629009BF6E3 /* UIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +425,7 @@
 		};
 		E3A4BC731FD2A324000C351C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46BC1A56871A1D79FD727DAC /* Pods-SHOPSTA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -323,6 +441,7 @@
 		};
 		E3A4BC741FD2A324000C351C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C87E78122BEA7345E77D1784 /* Pods-SHOPSTA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
