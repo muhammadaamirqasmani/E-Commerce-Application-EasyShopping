@@ -14,6 +14,7 @@
 		843D60511FD2EBB8009BF6E3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D60501FD2EBB8009BF6E3 /* LoginVC.swift */; };
 		843D60531FD2EBCF009BF6E3 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D60521FD2EBCF009BF6E3 /* SignUpVC.swift */; };
 		843D60551FD2EBE1009BF6E3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D60541FD2EBE1009BF6E3 /* HomeVC.swift */; };
+		843D60591FD30D25009BF6E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 843D60581FD30D25009BF6E3 /* GoogleService-Info.plist */; };
 		84E36E691FD2B3BD001AE1AA /* Vollkorn_SC in Resources */ = {isa = PBXBuildFile; fileRef = 84E36E681FD2B3BD001AE1AA /* Vollkorn_SC */; };
 		B17FD072284F208954BAA902 /* Pods_SHOPSTA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DA30049BC502591B6203AF /* Pods_SHOPSTA.framework */; };
 		E3A4BC641FD2A324000C351C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A4BC631FD2A324000C351C /* AppDelegate.swift */; };
@@ -31,6 +32,7 @@
 		843D60501FD2EBB8009BF6E3 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		843D60521FD2EBCF009BF6E3 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		843D60541FD2EBE1009BF6E3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		843D60581FD30D25009BF6E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		84E36E681FD2B3BD001AE1AA /* Vollkorn_SC */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Vollkorn_SC; sourceTree = SOURCE_ROOT; };
 		99DA30049BC502591B6203AF /* Pods_SHOPSTA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHOPSTA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C87E78122BEA7345E77D1784 /* Pods-SHOPSTA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHOPSTA.release.xcconfig"; path = "Pods/Target Support Files/Pods-SHOPSTA/Pods-SHOPSTA.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				E3A4BC6A1FD2A324000C351C /* Assets.xcassets */,
 				E3A4BC6C1FD2A324000C351C /* LaunchScreen.storyboard */,
 				E3A4BC6F1FD2A324000C351C /* Info.plist */,
+				843D60581FD30D25009BF6E3 /* GoogleService-Info.plist */,
 			);
 			path = SHOPSTA;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 			files = (
 				E3A4BC6E1FD2A324000C351C /* LaunchScreen.storyboard in Resources */,
 				E3A4BC6B1FD2A324000C351C /* Assets.xcassets in Resources */,
+				843D60591FD30D25009BF6E3 /* GoogleService-Info.plist in Resources */,
 				E3A4BC691FD2A324000C351C /* Main.storyboard in Resources */,
 				84E36E691FD2B3BD001AE1AA /* Vollkorn_SC in Resources */,
 			);

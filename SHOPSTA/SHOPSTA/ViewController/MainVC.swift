@@ -7,14 +7,19 @@
 //
 
 import UIKit
+import Firebase
+
 
 class MainVC: UIViewController {
 
+    var quoteListener: ListenerRegistration!
+    var appDelegte = UIApplication.shared.delegate as! AppDelegate
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
+    
 
 
 }

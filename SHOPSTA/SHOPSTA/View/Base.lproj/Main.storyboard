@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W7t-Pv-8Pa">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -21,7 +21,7 @@
         <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="SHOPSTA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainVC" id="BYZ-38-t0r" customClass="MainVC" customModule="SHOPSTA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kSO-bb-YYL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -202,7 +202,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="250" id="0DC-1L-Vo9"/>
                                         </constraints>
@@ -250,7 +250,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yr8-LN-3JR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1927" y="-79"/>
+            <point key="canvasLocation" x="2050" y="-66"/>
         </scene>
         <!--Sign UpVC-->
         <scene sceneID="MSI-lz-JPf">
@@ -413,6 +413,9 @@
                                                         <real key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="ChooseUserImage:" destination="ULc-ta-dyT" eventType="touchUpInside" id="LCD-9e-H56"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40A-PR-pzG" customClass="ButtonBorder" customModule="SHOPSTA" customModuleProvider="target">
                                                 <rect key="frame" x="158" y="0.0" width="153" height="35"/>
@@ -444,7 +447,6 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="egm-CT-gdP" firstAttribute="leading" secondItem="TV0-pW-xBL" secondAttribute="leading" constant="4" id="5kz-wt-gZw"/>
                                     <constraint firstItem="cWj-s3-56K" firstAttribute="leading" secondItem="TV0-pW-xBL" secondAttribute="leading" constant="4" id="7m8-xe-ZwP"/>
@@ -481,6 +483,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Lqo-rg-Fqp"/>
                     </view>
+                    <connections>
+                        <outlet property="UserEmail" destination="Bkx-9D-Epr" id="Neg-FK-0PL"/>
+                        <outlet property="UserName" destination="egm-CT-gdP" id="e7t-a9-9Lo"/>
+                        <outlet property="UserPassword" destination="gVq-Wh-tpb" id="GbS-ZR-wDt"/>
+                        <outlet property="UserRePassword" destination="ksx-6F-Vjp" id="cEc-QC-HKy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KNJ-p1-3Th" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -13,9 +13,9 @@ class ShadowView: UIView {
     
     override func awakeFromNib() {
         self.layer.shadowOpacity = 0.75
-        self.layer.shadowRadius = 5
-        let red = UIColor(red: 234.0/255.0, green: 36.0/255.0, blue: 37.0/255.0, alpha: 1.0)
-        self.layer.shadowColor = red.cgColor
+        self.layer.shadowRadius = 10
+        let color = UIColor(red: 119.0/255.0, green: 211.0/255.0, blue: 40.0/255.0, alpha: 1.0)
+        self.layer.shadowColor = color.cgColor
         super.awakeFromNib()
     }
     

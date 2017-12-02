@@ -90,7 +90,7 @@
                         <viewLayoutGuide key="safeArea" id="DRo-oK-dAC"/>
                     </view>
                     <connections>
-                        <segue destination="Ok1-Wy-i2a" kind="show" identifier="logined" id="hfh-2Z-IWz"/>
+                        <segue destination="Ok1-Wy-i2a" kind="show" identifier="loggedIn" id="hfh-2Z-IWz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u2b-eP-xvf" userLabel="First Responder" sceneMemberID="firstResponder"/>

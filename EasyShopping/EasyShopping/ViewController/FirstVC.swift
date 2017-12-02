@@ -33,7 +33,7 @@ class FirstVC: UIViewController {
                     }
                 }
             })
-            self.performSegue(withIdentifier: "logined", sender: self)
+            self.performSegue(withIdentifier: "loggedIn", sender: self)
         }
     }
 
