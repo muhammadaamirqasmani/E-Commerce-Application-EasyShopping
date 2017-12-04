@@ -16,7 +16,7 @@ import FirebaseMessaging
 
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,  UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
     let APIKey = "AIzaSyBi2sOJKtAP5QfZVSEfqyM3pJ54z-aX0ik"
@@ -40,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if #available(iOS 10.0, *) {
             // For iOS 10 display notification (sent via APNS)
             UNUserNotificationCenter.current().delegate = self
-            
+
             let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
             UNUserNotificationCenter.current().requestAuthorization(
                 options: authOptions,
@@ -50,7 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
             application.registerUserNotificationSettings(settings)
         }
-        
+
         application.registerForRemoteNotifications()
         
         
@@ -79,9 +79,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
-    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
-        Messaging.messaging().apnsToken = deviceToken as Data
-    }
+//    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+//        Messaging.messaging().apnsToken = deviceToken as Data
+//    }
 
 
 }
@@ -89,39 +89,79 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate : MessagingDelegate {
     // [START refresh_token]
     func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
-        guard let newToken = InstanceID.instanceID().token() else {return}
-        self.deviceID = newToken
+//        guard let newToken = InstanceID.instanceID().token() else {return}
+//        self.deviceID = newToken
         print("Firebase registration token: \(fcmToken)")
         
         // TODO: If necessary send token to application server.
         // Note: This callback is fired at each app startup and whenever a new token is generated.
     }
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        print("notification arrived!")
+//        if let notificationObj = userInfo as? [String:Any] {
+//
+//            if let _ = notificationObj["isMessage"] as? String, let senderID = notificationObj["senderID"] as? String{
+//                let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//                let rootViewController:UINavigationController = storyboard.instantiateViewController(withIdentifier: "VC") as! UINavigationController
+//                let main  = storyboard.instantiateViewController(withIdentifier: "Main") as! UITabBarController
+//                rootViewController.viewControllers.append(main)
+//                switch application.applicationState{
+//                case .inactive, .active:
+//                    Providor.shared.userRef.child(senderID)
+//                        .observeSingleEvent(of: .value, with: { (user) in
+//                            let sender = Mapper<DUser>().map(JSONObject: user.value)
+//                            sender?.id = user.key
+//                            main.selectedIndex = 4
+//                            Indicator.hide()
+//                        })
+//                    self.window?.rootViewController = rootViewController
+//                    Indicator.show()
+//                    break
+//
+//                default:
+//                    break
+//                }
+//            }
+//        }
+        let viewController = self.window!.rootViewController!.storyboard!.instantiateViewController(withIdentifier: "ItemDetailVC")
+        self.window?.rootViewController = viewController
+        completionHandler(UIBackgroundFetchResult.newData)
+    }
+
     // [END refresh_token]
     // [START ios_10_data_message]
     // Receive data messages on iOS 10+ directly from FCM (bypassing APNs) when the app is in the foreground.
     // To enable direct data messages, you can set Messaging.messaging().shouldEstablishDirectChannel to true.
     func messaging(_ messaging: Messaging, didReceive remoteMessage: MessagingRemoteMessage) {
         print("Received data message: \(remoteMessage.appData)")
+        
+//        let storyboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        let ItemDetailVC = storyboard.instantiateViewController(withIdentifier: "ItemDetailVC")
+//        window?.makeKeyAndVisible()
+//        window?.rootViewController?.present(ItemDetailVC, animated: true, completion: nil)
+
     }
     // [END ios_10_data_message]
 }
 
 
-extension AppDelegate : UNUserNotificationCenterDelegate {
-    
-    func userNotificationCenter(_ center: UNUserNotificationCenter,
-                                willPresent notification: UNNotification,
-                                withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        let userInfo = notification.request.content.userInfo
-        print(userInfo)
-        
-        completionHandler([.alert,.sound,.badge])
-    }
-    
-    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        let userInfo = response.notification.request.content.userInfo
-        print(userInfo)
-        
-        completionHandler()
-    }
-}
+//extension AppDelegate : UNUserNotificationCenterDelegate {
+
+//    func userNotificationCenter(_ center: UNUserNotificationCenter,
+//                                willPresent notification: UNNotification,
+//                                withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+//        let userInfo = notification.request.content.userInfo
+//        print(userInfo)
+//
+//        completionHandler([.alert,.sound,.badge])
+//    }
+//
+//    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+//        let userInfo = response.notification.request.content.userInfo
+//        print(userInfo)
+//
+//        completionHandler()
+//    }
+//}
+
