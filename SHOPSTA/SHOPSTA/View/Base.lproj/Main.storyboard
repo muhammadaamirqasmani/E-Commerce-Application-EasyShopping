@@ -229,7 +229,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ev9-3v-yeN" firstAttribute="top" secondItem="1U3-rh-Whr" secondAttribute="top" id="5JO-Ev-qBo"/>
                             <constraint firstItem="1U3-rh-Whr" firstAttribute="bottom" secondItem="Ev9-3v-yeN" secondAttribute="bottom" id="FcB-v5-yXV"/>
@@ -436,7 +436,21 @@
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="116" height="116"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cQx-WE-Pn3">
+                                                    <rect key="frame" x="0.0" y="0.0" width="116" height="116"/>
+                                                </imageView>
+                                            </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="cQx-WE-Pn3" secondAttribute="bottom" id="9UB-6D-Ic5"/>
+                                            <constraint firstItem="cQx-WE-Pn3" firstAttribute="top" secondItem="Wqc-fO-wAs" secondAttribute="top" id="DeQ-Wc-ma6"/>
+                                            <constraint firstItem="cQx-WE-Pn3" firstAttribute="leading" secondItem="Wqc-fO-wAs" secondAttribute="leading" id="bZG-kT-jDb"/>
+                                            <constraint firstAttribute="trailing" secondItem="cQx-WE-Pn3" secondAttribute="trailing" id="vyl-oz-yaJ"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="ItemImage" destination="cQx-WE-Pn3" id="pcr-2z-3XJ"/>
+                                        </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="cBK-6t-epH" customClass="CustomCollectionVC" customModule="SHOPSTA" customModuleProvider="target">
                                         <rect key="frame" x="129.66666666666666" y="3" width="116" height="116"/>
@@ -528,6 +542,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gSs-e1-npf"/>
                     </view>
+                    <connections>
+                        <outlet property="pictureCollection" destination="ZQN-Az-DFE" id="VtS-oh-bsQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yr8-LN-3JR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,11 +7,30 @@
 //
 
 import UIKit
+import Firebase
+import ObjectMapper
+import SDWebImage
 
-class HomeVC: UIViewController {
 
+class HomeVC: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource {
+ 
+
+    @IBOutlet weak var pictureCollection: UICollectionView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        pictureCollection.delegate = self
+        pictureCollection.dataSource = self
     }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        <#code#>
+    }
+    
 
 }

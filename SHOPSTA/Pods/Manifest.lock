@@ -99,6 +99,7 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - ObjectMapper (3.0.0)
   - Protobuf (3.4.0)
   - SDWebImage/Core (4.2.1)
   - SDWebImage/WebP (4.2.1):
@@ -110,6 +111,7 @@ DEPENDENCIES:
   - Firebase/Firestore
   - Firebase/Storage
   - IQKeyboardManagerSwift
+  - ObjectMapper
   - SDWebImage/WebP
 
 SPEC CHECKSUMS:
@@ -131,9 +133,10 @@ SPEC CHECKSUMS:
   leveldb-library: 9e29a1d913f922444127a7d0f28b025a0e2ba053
   libwebp: 1d5a07c2eb97f9c31bd5f154bb82efc0ea67c6a2
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  ObjectMapper: 92230db59bf8f341a5c3a3cf0b9fbdde3cf0d87f
   Protobuf: 03eef2ee0b674770735cf79d9c4d3659cf6908e8
   SDWebImage: 1fa4c9edf525b744f002db89f3f5a38b3cd4c541
 
-PODFILE CHECKSUM: 56fcd23646b9d2672b72ca3a0ba2416aa85095e8
+PODFILE CHECKSUM: a15730be01250c301d3c51dd2e34bad78e1c6eae
 
 COCOAPODS: 1.3.1
