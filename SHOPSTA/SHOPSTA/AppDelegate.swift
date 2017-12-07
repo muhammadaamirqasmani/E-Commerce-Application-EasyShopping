@@ -14,18 +14,14 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var UserProfleImage: String?
+    var UserName: String?
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         IQKeyboardManager.sharedManager().enable = true
         FirebaseApp.configure()
-        if Auth.auth().currentUser == nil {
-            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-            let mainVC = storyboard.instantiateViewController(withIdentifier: "MainVC")
-            window?.makeKeyAndVisible()
-            window?.rootViewController?.present(mainVC, animated: true, completion: nil)
-        }
         return true
     }
 

@@ -19,7 +19,25 @@ class MainVC: UIViewController {
         super.viewDidLoad()
     }
 
-    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if Auth.auth().currentUser != nil{
+            let uid = Auth.auth().currentUser?.uid
+            
+            quoteListener = Firestore.firestore().collection("user").whereField("uid", isEqualTo: uid).addSnapshotListener({  (querySnapshot, err) in
+                if let err = err {
+                    print("Error getting documents: \(err)")
+                } else {
+                    for document in querySnapshot!.documents {
+                        print("\(document.documentID) => \(document.data())")
+                        self.appDelegte.UserProfleImage = document.data()["ImageURL"] as? String
+                        self.appDelegte.UserName = document.data()["UserName"] as? String
+                    }
+                }
+            })
+            self.performSegue(withIdentifier: "HomeVC", sender: self)
+        }
+    }
 
 
 }

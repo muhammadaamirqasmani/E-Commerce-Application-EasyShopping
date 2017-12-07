@@ -99,6 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="393" y="-10"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="ZrQ-VL-4aZ">
@@ -118,7 +119,7 @@
                                         </constraints>
                                         <color key="tintColor" red="0.46666666670000001" green="0.82745098039999998" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="Button" image="Clear"/>
+                                        <state key="normal" image="Clear"/>
                                         <connections>
                                             <action selector="BackBtn:" destination="5Vm-SR-6HO" eventType="touchUpInside" id="6k6-1a-xbF"/>
                                         </connections>
@@ -251,7 +252,7 @@
         <!--HomeVC-->
         <scene sceneID="pQc-Za-Wk1">
             <objects>
-                <viewController id="W7t-Pv-8Pa" customClass="HomeVC" customModule="SHOPSTA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="W7t-Pv-8Pa" customClass="HomeVC" customModule="SHOPSTA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7OU-QV-bRx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -300,6 +301,9 @@
                                             <constraint firstAttribute="height" constant="50" id="lAZ-6h-bAV"/>
                                         </constraints>
                                         <state key="normal" image="Add"/>
+                                        <connections>
+                                            <action selector="ItemPicture:" destination="W7t-Pv-8Pa" eventType="touchUpInside" id="p4a-e7-vLg"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="78E-WM-k6E">
                                         <rect key="frame" x="118" y="220.66666666666669" width="140" height="24"/>
@@ -471,6 +475,9 @@
                         <viewLayoutGuide key="safeArea" id="gSs-e1-npf"/>
                     </view>
                     <connections>
+                        <outlet property="FollowersCount" destination="v5H-PX-Ved" id="JaY-T4-ZAf"/>
+                        <outlet property="UserName" destination="78E-WM-k6E" id="teh-Il-J59"/>
+                        <outlet property="UserProfileImage" destination="Xv5-Id-9xg" id="RTC-cd-4Dr"/>
                         <outlet property="pictureCollection" destination="ZQN-Az-DFE" id="VtS-oh-bsQ"/>
                     </connections>
                 </viewController>
@@ -493,7 +500,7 @@
                                 </constraints>
                                 <color key="tintColor" red="0.46666666670000001" green="0.82745098039999998" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Button" image="Clear"/>
+                                <state key="normal" image="Clear"/>
                                 <connections>
                                     <action selector="BackbBtn:" destination="ULc-ta-dyT" eventType="touchUpInside" id="78e-50-PXq"/>
                                 </connections>
