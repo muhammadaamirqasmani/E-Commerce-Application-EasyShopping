@@ -32,10 +32,13 @@ class MainVC: UIViewController {
                         print("\(document.documentID) => \(document.data())")
                         self.appDelegte.UserProfleImage = document.data()["ImageURL"] as? String
                         self.appDelegte.UserName = document.data()["UserName"] as? String
+                        print(self.appDelegte.UserName)
+                        print(self.appDelegte.UserProfleImage)
+                        self.performSegue(withIdentifier: "HomeVC", sender: self)
                     }
                 }
             })
-            self.performSegue(withIdentifier: "HomeVC", sender: self)
+            
         }
     }
 

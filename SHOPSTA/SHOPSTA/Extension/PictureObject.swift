@@ -15,7 +15,8 @@ class pictureObject: Mappable {
     var UserName: String?
     var ImageURL: String?
     var senderUID:String?
-    
+    var timeStamp:String?
+    var id:String?
     static var pictureDetail = [pictureObject]()
     
     required init?(map: Map) {
@@ -26,6 +27,6 @@ class pictureObject: Mappable {
         UserName        <- map["UserName"]
         ImageURL        <- map["ImageURL"]
         senderUID        <- map["senderUID"]
-
+        timeStamp        <- map["timeStamp"]
     }
 }
