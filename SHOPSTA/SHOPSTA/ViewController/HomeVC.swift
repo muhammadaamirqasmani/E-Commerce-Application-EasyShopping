@@ -39,9 +39,13 @@ class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         super.viewDidLoad()
         pictureCollection.delegate = self
         pictureCollection.dataSource = self
+
+        
         self.UserName.text = self.appDelegte.UserName
         self.UserProfileImage.sd_setImage(with: URL(string: self.appDelegte.UserProfleImage!), placeholderImage: UIImage(named: "placeholder.png"))
+        
         activityView.center = self.view.center
+        
         UserProfileImage.layer.borderWidth = 1
         UserProfileImage.layer.masksToBounds = false
         UserProfileImage.layer.borderColor = UIColor.yellow.cgColor
@@ -56,10 +60,12 @@ class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
                 let array = querySnapshot!.documents.map({ (data) -> pictureObject in
                     let obj = Mapper<pictureObject>().map(JSON: data.data())!
                     obj.id = data.documentID
+                    print(obj.UserName)
                     return obj
                 })
                 print(array)
                 pictureObject.pictureDetail = array
+                self.picturearray = array
                 self.pictureCollection.reloadData()
                 self.activityView.stopAnimating()
             }
@@ -100,8 +106,9 @@ class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return picturearray.count
-    }
     
+    }
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCell", for: indexPath) as! CustomCollectionVC
