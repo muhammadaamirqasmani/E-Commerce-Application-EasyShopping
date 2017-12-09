@@ -12,4 +12,5 @@ target 'SHOPSTA' do
     pod 'Firebase/Storage'
     pod 'Firebase/Firestore’
     pod 'ObjectMapper'
+    pod 'SideMenu'
 end
