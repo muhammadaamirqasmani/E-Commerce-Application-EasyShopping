@@ -13,7 +13,8 @@ import ObjectMapper
 import SDWebImage
 
 
-class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
+
+class HomeVC: BaseViewController, UICollectionViewDelegate, UICollectionViewDataSource{
     
     
     @IBOutlet weak var pictureCollection: UICollectionView!
@@ -39,8 +40,8 @@ class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         super.viewDidLoad()
         pictureCollection.delegate = self
         pictureCollection.dataSource = self
-
-        
+        self.addSlideMenuButton()
+        self.title = "Home"
         self.UserName.text = self.appDelegte.UserName
         self.UserProfileImage.sd_setImage(with: URL(string: self.appDelegte.UserProfleImage!), placeholderImage: UIImage(named: "placeholder.png"))
         
